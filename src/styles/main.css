@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     scroll-behavior: smooth !important;
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 a{
@@ -99,6 +99,10 @@ li{
     display: none;
 }
 /* end nav */
+
+#mainContent{
+    min-height: 100vh;
+}
 
 /* begin hero */
 .hero{
