@@ -1,0 +1,349 @@
+/* begin general */
+*{
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth !important;
+    border: 1px solid red;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+li{
+    list-style: none;
+}
+
+.toggle{
+    display: flex !important;
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background-color: #00adb5;
+    color: black;
+    padding: 8px;
+    z-index: 100;
+}
+
+.skip-link:focus {
+    top: 0;
+}
+/* end general */
+
+
+/* begin nav */
+.drawer{
+    background-color: #393e46;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 75px;
+    padding: 0 20px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.nav-brand{
+    font-weight: bold;
+    min-height: 44px;
+    min-width: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-link{
+    display: flex;
+    flex-direction: row;
+}
+
+.nav-link li{
+    margin: 0 20px;
+    min-height: 44px;
+    min-width: 44px;
+    line-height: 44px;
+}
+
+.nav-brand li a, .nav-link li a{
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.nav-brand li a{
+    /* font-size: 34px; */
+    font-size: 32px;
+}
+
+.nav-link li a{
+    font-size: 24px;
+}
+
+.nav-brand li a:hover, .nav-link li a:hover{
+    text-shadow: 2px 2px 2px #00adb5;
+    transition: .3s;
+}
+
+#hamburger { 
+    font-size: 49px; 
+    text-decoration: none; 
+    color: white;
+    text-shadow: 2px 2px 2px black;
+}
+
+.hamburger, .hamburger-list{
+    display: none;
+}
+/* end nav */
+
+/* begin hero */
+.hero{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.hero-caption{
+    position: absolute;
+    color: white;
+    text-shadow: 2px 2px 2px black;
+    text-align: center;
+}
+
+.hero-caption h1, .hero-caption p, .hero-caption button{
+    margin: 25px 0;
+}
+
+.hero-caption h1{
+    font-size: 46px;
+}
+
+.hero-caption p{
+    font-size: 24px;
+}
+
+button{
+    padding: 18px;
+    border: none;
+    background-color: #00adb5;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+}
+
+button:hover{
+    background-color: #aad8d3;
+}
+
+button a{
+    color: black;
+    /* text-shadow: 2px 2px 2px black; */
+    font-size: 31px;
+}
+
+/* end hero */
+
+/* begin cafes */
+.cafes{
+    margin: 50px;
+}
+
+.section-title{
+    text-align: center;
+}
+
+.section-cafes{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cafe{
+    width: 350px;
+    margin: 50px 10px;
+    text-align: justify;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.cafe-description{
+    padding: 30px;
+}
+
+.description{
+    overflow: hidden;
+    display: -webkit-box;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 6; /* number of lines to show */
+    -webkit-box-orient: vertical;
+}
+
+.cafe img{
+    width: 100%;
+    height: 270px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.cafe:hover{
+    box-shadow: #00adb5 0px 2px 10px;
+}
+
+.btn-detail-cafe{
+    background-color: #00adb5;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+}
+
+.btn-detail-cafe:hover{
+    background-color: #aad8d3;
+}
+/* end cafes */
+
+/* begin footer */
+footer{
+    /* background-color: rgb(26, 26, 26); */
+    background-color: #393e46;
+    text-align: center;
+    padding: 15px;
+    color: white;
+}
+/* end footer */
+
+
+
+/* begin tab screen */
+@media screen and (max-width: 768px) {
+    /* begin nav */
+    .drawer{
+        justify-content: center;
+        height: min-content;
+    }
+
+    .nav-brand, .nav-link{
+        display: none;
+    }
+
+    .hamburger{
+        display: flex;
+    }
+
+    .btn-hamburger{
+        background-color: transparent;
+    }
+
+    .hamburger-list{
+        position: absolute;
+        width: 100%;
+        height: 300px;
+        display: none;
+        background-color: #393e46;
+        z-index: 1;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hamburger-link{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+
+    .hamburger-link li{
+        min-height: 44px;
+        min-width: 44px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hamburger-link li a{
+        color: white;
+        text-shadow: 2px 2px 2px black;
+        font-size: 28px;
+    }
+    /* end nav */
+
+    .hero-caption h1{
+        font-size: 34px;
+    }
+
+    .hero-caption p{
+        font-size: 24px;
+    }
+
+    button{
+        padding: 25px 33px;
+        font-size: 16px;
+    }
+    /* end hero */
+
+    /* begin cafes */
+    .cafe{
+        width: 450px;
+    }
+    /* end cafes */
+
+    /* begin footer */
+    footer{
+        font-size: 14px;
+    }
+    /* end footer */
+
+}
+/* end tab screen */
+
+/* begin mobile screen */
+@media screen and (max-width: 576px) {
+    
+
+    /* begin hero */
+    .hero{
+        height: 100vh;
+    }
+
+    .hero img{
+        height: 100vh;
+    }
+
+    .hero-caption h1{
+        font-size: 32px;
+        padding: 0 10px;
+    }
+
+    .hero-caption p{
+        font-size: 18px;
+        padding: 0 12px;
+    }
+
+    button{
+        padding: 20px;
+        font-size: 16px;
+    }
+    /* end hero */
+
+    /* begin cafes */
+    .cafe{
+        width: 100%;
+    }
+    /* end cafes */
+
+    /* begin footer */
+    footer{
+        font-size: 10px;
+    }
+    /* end footer */
+}
