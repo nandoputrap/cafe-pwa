@@ -12,10 +12,6 @@ class RestaurantSource {
         return response.json();
     }
 
-    // static async pictureRestaurant(pictureId) {
-    //     const response = await fetch(API_ENDPOINT.PICTURE(pictureId));
-    //     return response.json();
-    // }
 }
 
 export default RestaurantSource;
