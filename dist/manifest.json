@@ -1,0 +1,17 @@
+    {
+        "name": "Whatever Cafe App",
+        "short_name": "WCA",
+        "description": "Find whatever cafe you want!",
+        "start_url": "/index.html",
+        "display": "standalone",
+        "background_color": "#ffffff",
+        "theme_color": "#d84315",
+        "icons": [
+            {
+                "src": "./images/favicon/favicon-32x32.png",
+                "sizes": "32x32",
+                "type": "image/png",
+                "purpose": "any maskable"
+            }
+        ]
+    }
