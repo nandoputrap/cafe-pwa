@@ -13,22 +13,25 @@ const Detail = {
             </div>
 
             <div class="menu">
-                <div class="categories">
-                    <h2>Categories &nbsp;📋</h2>
-                    <br>
-                    <div class = "category-list">
-                    </div>
-                </div>
                 <div class="menu-list">
+                    <div class="categories">
+                        <h1>📋</h1>
+                        <h2>Categories</h2>
+                        <br><br>
+                        <div class = "category-list">
+                        </div>
+                    </div>
                     <div class="foods">
-                        <h2>Foods &nbsp;🍽️</h2>
-                        <br>
+                        <h1>🍽️</h1>
+                        <h2>Foods</h2>
+                        <br><br>
                         <div class = "food-list">
                         </div>
                     </div>
                     <div class="drinks">
-                        <h2>Drinks &nbsp;🥤</h2>
-                        <br>
+                        <h1>🥤</h1>
+                        <h2>Drinks</h2>
+                        <br><br>
                         <div class = "drink-list">
                         </div>
                     </div>
@@ -57,7 +60,7 @@ const Detail = {
                     <img src="${API_ENDPOINT.PICTURE(cafe.restaurant.pictureId)}" alt="${cafe.restaurant.name}">
                     <div class="hehe">
                         <h1>${cafe.restaurant.name}</h1>
-                        <Alamat:>Kota: ${cafe.restaurant.city} | Alamat: ${cafe.restaurant.address}</p>
+                        <p>Kota: ${cafe.restaurant.city} | Alamat: ${cafe.restaurant.address}</p>
                         <p>Rating: ${cafe.restaurant.rating}</p>
                     </div>
                 </div >`
