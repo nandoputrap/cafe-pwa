@@ -1,0 +1,23 @@
+[33mcommit f0c4b7039707d28fe18c7dc80fdfa41d7710c97c[m[33m ([m[1;36mHEAD -> [m[1;32mmain[m[33m)[m
+Author: Nando P. Pratama <nandoputrap@gmail.com>
+Date:   Thu Jun 3 16:41:41 2021 +0700
+
+    Menambahkan service worker
+
+[33mcommit 422c6af081ce6ebb4d556e139bd525e9e3126763[m[33m ([m[1;31morigin/main[m[33m)[m
+Author: Nando P. Pratama <nandoputrap@gmail.com>
+Date:   Wed Jun 2 09:55:12 2021 +0700
+
+    sampai detail cafe from API, tampilan belum rapi
+
+[33mcommit 03b4c462ec9d88bb7216271fc982bb3776fac5a7[m
+Author: Nando P. Pratama <nandoputrap@gmail.com>
+Date:   Mon May 31 17:26:43 2021 +0700
+
+    Fetch cafe list API done
+
+[33mcommit ef7de5dd9d5645c319910c77ded21f58cd2bcc39[m
+Author: Nando P. Pratama <nandoputrap@gmail.com>
+Date:   Mon May 31 13:53:01 2021 +0700
+
+    checkpoint. belum diupgrade ke pwa

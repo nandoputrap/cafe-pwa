@@ -7,29 +7,30 @@ const Detail = {
     async render() {
         // <button><a href="">Add to favorite</a></button>
         return `
-        <div class="cafes" id="cafes">
-            <div class="section-title">
-                <h1 class="cafe-name">Cafe Detail</h1>
-            </div>
-            <br>
+        <div class="cafe-detail">
             <div class="section-cafe-detail">
                 
             </div>
 
             <div class="menu">
                 <div class="categories">
-                    <h2>Categories</h2>
+                    <h2>Categories &nbsp;📋</h2>
+                    <br>
                     <div class = "category-list">
                     </div>
                 </div>
-                <div class="foods">
-                    <h2>Foods</h2>
-                    <div class = "food-list">
+                <div class="menu-list">
+                    <div class="foods">
+                        <h2>Foods &nbsp;🍽️</h2>
+                        <br>
+                        <div class = "food-list">
+                        </div>
                     </div>
-                </div>
-                <div class="drinks">
-                    <h2>Drinks</h2>
-                    <div class = "drink-list">
+                    <div class="drinks">
+                        <h2>Drinks &nbsp;🥤</h2>
+                        <br>
+                        <div class = "drink-list">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -51,13 +52,15 @@ const Detail = {
         const cafe = await RestaurantSource.detailRestaurant(url.id);
         console.log(cafe);
 
-        const cafeDetail = `<div class="cafe-detail" tabindex="0">
-                <img src="${API_ENDPOINT.PICTURE(cafe.restaurant.pictureId)}" alt="${cafe.restaurant.name}">
-                <div class="cafe-description">
-                    <p>Kota: ${cafe.restaurant.city} | Alamat: ${cafe.restaurant.address}</p>
-                    <p>Rating: ${cafe.restaurant.rating}</p>
-                </div>     
-        </div> `
+        const cafeDetail = `
+                <div class="haha" tabindex="0">
+                    <img src="${API_ENDPOINT.PICTURE(cafe.restaurant.pictureId)}" alt="${cafe.restaurant.name}">
+                    <div class="hehe">
+                        <h1>${cafe.restaurant.name}</h1>
+                        <Alamat:>Kota: ${cafe.restaurant.city} | Alamat: ${cafe.restaurant.address}</p>
+                        <p>Rating: ${cafe.restaurant.rating}</p>
+                    </div>
+                </div >`
 
         let cafeReviews = '';
         let cafeFoods = '';
@@ -93,14 +96,14 @@ const Detail = {
 
         reviews.forEach(review => {
             cafeReviews += `
-                <p>${review.name}</p>
+                <p class="reviewer-name">${review.name}</p>
                 <p>${review.review}</p>
-                <p>${review.date}</p>
+                <p class="reviewer-date">${review.date}</p>
                 <br>
             `
         });
 
-        document.querySelector(".cafe-name").innerHTML = cafe.restaurant.name;
+        // document.querySelector(".cafe-name").innerHTML = cafe.restaurant.name;
 
         document.querySelector(".section-cafe-detail").innerHTML = cafeDetail;
 

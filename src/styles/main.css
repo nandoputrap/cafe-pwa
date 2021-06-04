@@ -45,7 +45,7 @@ li{
     justify-content: space-between;
     height: 75px;
     padding: 0 20px;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
 }
 
 .nav-brand{
@@ -177,7 +177,7 @@ button a{
     width: 350px;
     margin: 50px 10px;
     text-align: justify;
-    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
 }
 
 .cafe-description{
@@ -200,7 +200,7 @@ button a{
 }
 
 .cafe:hover{
-    box-shadow: #00adb5 0px 2px 10px;
+    box-shadow: #00adb5 0 2px 10px;
 }
 
 .btn-detail-cafe{
@@ -351,3 +351,117 @@ footer{
     }
     /* end footer */
 }
+
+
+/* BEGIN DETAIL PAGE */
+.section-cafe-detail{
+    /* height: 500px; */
+    width: 100%;
+    /* border: 1px solid blue; */
+    display: flex;
+    flex: 1;
+    align-items: stretch;
+    flex-direction: row;
+}
+
+.cafe-detail{
+    /* background-color: cornflowerblue; */
+    margin: 2%;
+    box-shadow: rgba(149, 157, 165, 0.2) 0 8px 24px;
+}
+
+.cafe-name{
+    text-align: center;
+}
+
+.haha{
+    width: 100%;
+    position: relative;
+    /* border: 10px solid green; */
+}
+
+.haha img{
+    width: 100%;
+    
+    /* padding: 5%; */
+}
+
+.hehe{
+    display: flex;
+    /* width: 50%; */
+    /* border: 10px solid yellow; */
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+    padding-left: 5%;
+    color: white;
+    text-shadow: 2px 2px 20px black;
+    /* border: 1px solid red; */
+    width: 100%;
+    padding-bottom: 50px;
+    background: linear-gradient(
+        to top,
+        black,
+        rgba(0, 0, 0, 0)
+    )
+    
+}
+
+.menu{
+    /* background-color: coral; */
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.categories{
+    text-align: center;
+    width: 100%;
+}
+
+.menu-list{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.foods{
+    width: 50%;
+}
+
+.drinks{
+    width: 50%;
+}
+
+
+.reviews{
+    /* background-color: cornflowerblue; */
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.reviews h2{
+    text-align: center;
+}
+
+.review-list{
+    margin-top: 50px;
+    padding: 5%;
+}
+
+.reviewer-name{
+    font-weight: bold;
+}
+
+.reviewer-date{
+    font-size: 11px;
+    color: grey;
+}
+/* .img-detail{
+    width: 500px;
+    z-index: 1;
+} */
+
+/* END DETAUL PAGE */
